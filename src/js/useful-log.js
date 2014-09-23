@@ -18,14 +18,15 @@ var useful = useful || {};
 	var popup, messages = [];
 
 	useful.log = function () {
+		var a, b, message;
 		// for all arguments
-		for (var a = 0, b = arguments.length; a < b; a += 1) {
+		for (a = 0, b = arguments.length; a < b; a += 1) {
 			// add the log entry to the top
-			message += (argument[a] !== null && argument[a] !== undefined) ? ' ' + JSON.stringify(argument[a]) : argument[a];
+			message = (arguments[a] !== null && arguments[a] !== undefined) ? JSON.stringify(arguments[a]) : arguments[a];
 			messages.push(message);
 		}
 		// if the log window exists
-		if (popup && popup.nodeName === 'div') {
+		if (popup && /div/i.test(popup.nodeName)) {
 			// write to the log
 			popup.innerHTML = messages.reverse().join('<br/>');
 		}
@@ -39,6 +40,8 @@ var useful = useful || {};
 			popup.style.height = '240px';
 			popup.style.color = 'Black';
 			popup.style.backgroundColor = 'Yellow';
+			popup.style.opacity = 0.7;
+			popup.style.padding = '1em';
 			popup.style.zIndex = 100000;
 			popup.style.overflow = 'auto';
 			popup.innerHTML = messages.reverse().join('<br/>');

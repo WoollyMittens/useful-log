@@ -1,6 +1,6 @@
 # useful.log.js: Improvised Debug Console
 
-Implements a debug console for use in browsers that do not output console.log(), like mobile apps.
+Implements a debug console for use in browsers for which console messages may be inaccessible, like mobile apps and kiosk software.
 
 Try the <a href="http://www.woollymittens.nl/useful/default.php?url=useful-log">demo</a>.
 
