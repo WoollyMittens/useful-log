@@ -1,6 +1,6 @@
 /*
 	Source:
-	van Creij, Maurice (2014). "useful.log.js: Improvised Debug Console.", version 20140919, http://www.woollymittens.nl/.
+	van Creij, Maurice (2014). "useful.log.js: Improvised Debug Console.", version 20141127, http://www.woollymittens.nl/.
 
 	License:
 	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
