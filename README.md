@@ -2,7 +2,7 @@
 
 Implements a debug console for use in browsers for which console messages may be inaccessible, like mobile apps and kiosk software.
 
-Try the <a href="http://www.woollymittens.nl/useful/default.php?url=useful-log">demo</a>.
+Try the <a href="http://www.woollymittens.nl/default.php?url=useful-log">demo</a>.
 
 ## How to include the script
 
