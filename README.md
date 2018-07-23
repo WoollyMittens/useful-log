@@ -1,4 +1,4 @@
-# useful.log.js: Improvised Debug Console
+# log.js: Improvised Debug Console
 
 Implements a debug console for use in browsers for which console messages may be inaccessible, like mobile apps and kiosk software.
 
@@ -9,7 +9,7 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-log">demo</a
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful-log.js"></script>
+<script src="./js/log.js"></script>
 ```
 
 ## How to control the script

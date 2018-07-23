@@ -1,23 +1,20 @@
 /*
 	Source:
-	van Creij, Maurice (2014). "useful.log.js: Improvised Debug Console.", version 20141127, http://www.woollymittens.nl/.
+	van Creij, Maurice (2018). "log.js: Improvised Debug Console.", http://www.woollymittens.nl/.
 
 	License:
 	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
 */
 
-// public object
-var useful = useful || {};
-
 (function(){
 
-	// invoke strict mode
-	"use strict";
+	// PRIVATE
 
-	// private functions
 	var popup, messages = [];
 
-	useful.log = function () {
+	// PUBLIC
+
+	window.log = function () {
 		var a, b, message;
 		// for all arguments
 		for (a = 0, b = arguments.length; a < b; a += 1) {
@@ -51,7 +48,7 @@ var useful = useful || {};
 
 	// return as a require.js module
 	if (typeof module !== 'undefined') {
-		exports = module.exports = useful.log;
+		exports = module.exports = log;
 	}
 
 })();
