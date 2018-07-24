@@ -14,7 +14,7 @@
 
 	// PUBLIC
 
-	window.log = function () {
+	var log = function () {
 		var a, b, message;
 		// for all arguments
 		for (a = 0, b = arguments.length; a < b; a += 1) {
@@ -45,6 +45,9 @@
 			document.body.appendChild(popup);
 		}
 	};
+
+	// make public
+	window.log = log;
 
 	// return as a require.js module
 	if (typeof module !== 'undefined') {
