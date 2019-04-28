@@ -9,7 +9,23 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-log">demo</a
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/log.js"></script>
+<script src="js/log.js"></script>
+```
+
+Or use [Require.js](https://requirejs.org/).
+
+```js
+requirejs([
+	'js/log.js'
+], function(log) {
+	...
+});
+```
+
+Or import into an MVC framework.
+
+```js
+var log = require('js/log.js');
 ```
 
 ## How to control the script

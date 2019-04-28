@@ -41,5 +41,5 @@ var log = function () {
 };
 
 // return as a require.js module
-if (typeof define != 'undefined') define(['log'], function () { return log });
+if (typeof define != 'undefined') define([], function () { return log });
 if (typeof module != 'undefined') module.exports = log;
